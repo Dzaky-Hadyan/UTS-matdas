@@ -18,11 +18,10 @@ public class UTS1 {
                     //biner ke desimal
                     case 2:
                     int decimal12 = 0;
-                    //loop through each character in the binary string
                     for (int i = 0; i < digit; i++) {
-                        char bit = input.charAt(digit - 1 - i); // Start from the rightmost bit
+                        char bit = input.charAt(digit - 1 - i);
                         if (bit == '1') {
-                            decimal12 += Math.pow(2, i); // Add the value of the bit
+                            decimal12 += Math.pow(2, i);
                         }
                     }
                         System.out.print("Hasil: " + decimal12);
@@ -102,25 +101,25 @@ public class UTS1 {
                     case 1:
                     //Ubah ke desimal dulu
                     int angka = Integer.parseInt(input, 16);
-                    int[] listModulus = new int[32]; // Array to hold binary digits
+                    int[] listModulus = new int[32];
                     int i = 0;
                     //Perulangan convert
                     do {
-                        listModulus[i] = angka % 2; // Get the remainder (binary digit)
-                        angka /= 2; // Divide by 2 to shift right
+                        listModulus[i] = angka % 2;
+                        angka /= 2;
                         i++;
                     } while (angka != 0);
 
                     //Perulangan print
                     System.out.print("Hasil: ");
-                    for (int j = i - 1; j >= 0; j--) { // Print in reverse order
+                    for (int j = i - 1; j >= 0; j--) {
                         System.out.print(listModulus[j]);
                     }
                     break;
                     //heksa ke desimal
                     case 2:
                     int angka1 = Integer.parseInt(input, 16);
-                    int[] listModulus1 = new int[32]; // Array to hold binary digits
+                    int[] listModulus1 = new int[32];
                     int j = 0;
                     System.out.print("Hasil: " + angka1);
                     break;
