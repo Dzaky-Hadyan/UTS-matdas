@@ -25,6 +25,7 @@ public class UTS1 {
                         }
                     }
                         System.out.print("Hasil: " + decimal12);
+                        System.out.println();
                         break;
                     //biner ke heksa
                     case 3:
@@ -54,8 +55,10 @@ public class UTS1 {
                     for (int j = i-1; j >= 0; j--) {
                         System.out.print(listModulus1[j]);
                     }
-                    break;
+                    System.out.println();
+                        break;
                 }
+                break;
             case 2:
                 switch (convertTo) {
                     //desimal ke biner
@@ -72,7 +75,8 @@ public class UTS1 {
                     for (; i >= 0; i--) {
                         System.out.print(listModulus[i]);
                     }
-                    break;
+                    System.out.println();
+                        break;
                     //desimal ke heksa
                     case 3:
                     int decimal23 = Integer.valueOf(input);
@@ -93,8 +97,10 @@ public class UTS1 {
                     for (int k = j-1; k >= 0; k--) {
                         System.out.print(listModulus1[k]);
                     }
-                    break;
+                    System.out.println();
+                        break;
                 }
+                break;
             case 3:
                 switch (convertTo) {
                     //heksa ke biner
@@ -109,21 +115,21 @@ public class UTS1 {
                         angka /= 2;
                         i++;
                     } while (angka != 0);
-
                     //Perulangan print
                     System.out.print("Hasil: ");
                     for (int j = i - 1; j >= 0; j--) {
                         System.out.print(listModulus[j]);
                     }
-                    break;
+                        break;
                     //heksa ke desimal
                     case 2:
                     int angka1 = Integer.parseInt(input, 16);
                     int[] listModulus1 = new int[32];
                     int j = 0;
                     System.out.print("Hasil: " + angka1);
-                    break;
-            }
+                        break;
+                }
+                break;
         }
         sc.close();
     }
